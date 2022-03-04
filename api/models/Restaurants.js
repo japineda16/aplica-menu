@@ -15,7 +15,7 @@ module.exports = {
       required: true,
     },
     description: {
-      type: "string",
+      type: 'string',
       required: true
     },
     phone: {
@@ -24,6 +24,15 @@ module.exports = {
     },
     image: {
       type: 'string',
+    },
+    restaurantTag: {
+      type: 'string',
+      required: true
+    },
+
+    address: {
+      type: 'string',
+      required: false
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -37,22 +46,22 @@ module.exports = {
     // relations
     users: {
       // many-to-one
-      model: "users",
+      model: 'users',
     },
 
     fair: {
       // One-to-many
-      model: "fair",
+      model: 'fair',
     },
 
     category: {
-      collection: "categories",
-      via: "restaurant",
+      collection: 'categories',
+      via: 'restaurant',
     },
 
     menu: {
-      collection: "menu",
-      via: "restaurant",
+      collection: 'menu',
+      via: 'restaurant',
     },
   },
 };

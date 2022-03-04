@@ -12,7 +12,7 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     name: {
-      type: "string",
+      type: 'string',
       required: true,
     },
 
@@ -33,12 +33,12 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
     restaurant: {
-      model: "restaurants",
+      model: 'restaurants',
     },
 
     menu: {
-      collection: "menu",
-      via: "category",
+      collection: 'menu',
+      via: 'category',
     },
   },
 };

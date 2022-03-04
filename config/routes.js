@@ -18,7 +18,7 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-  "/": { view: "pages/homepage" },
+  '/': { view: 'pages/homepage' },
 
   /***************************************************************************
    *                                                                          *
@@ -35,35 +35,36 @@ module.exports.routes = {
    *         User        *
    ***********************/
   // SignUp
-  "POST /auth/signup/": "UsersController.signUp",
+  'POST /auth/signup/': 'UsersController.signUp',
   // Login
-  "POST /auth/login": "UsersController.login",
+  'POST /auth/login': 'UsersController.login',
   // Login route for API's keys
-  "POST /auth/systems-login": "UsersController.loginForApiKeys",
+  'POST /auth/systems-login': 'UsersController.loginForApiKeys',
   // Get user's session's
-  "GET /user": "UsersController.validateSession",
+  'GET /user': 'UsersController.validateSession',
   // Get all users
-  "GET /auth/all-users/": "UsersController.allUsers",
+  'GET /auth/all-users/': 'UsersController.allUsers',
 
   /**********************
    *      Restaurant     *
    ***********************/
   // Get restaurant with
-  "GET /restaurant/:slug": "FairController.getRestaurants",
+  'GET /restaurant/:slug': 'FairController.getRestaurants',
   //Upload restaurant logo
-  "POST /restaurant/logo/:id": "RestaurantsController.uploadRestaurantLogo",
+  'POST /restaurant/logo/:id': 'RestaurantsController.uploadRestaurantLogo',
   //Upload restaurant logo
-  "POST /menu/logo/:id": "MenuController.uploadMenuPhoto",
+  'POST /menu/logo/:id': 'MenuController.uploadMenuPhoto',
+  'GET /resturantTag/:tag': 'RestaurantsController.getRestaurant',
 
   /**********************
    *         Fair        *
    ***********************/
   //Upload fair logo
-  "POST /fair/logo/:id": "FairController.uploadFairLogo",
+  'POST /fair/logo/:id': 'FairController.uploadFairLogo',
 
   /**********************
    *      Category       *
    ***********************/
   //Upload category logo
-  "POST /categories/logo/:id": "CategoriesController.uploadCategoryPhoto"
+  'POST /categories/logo/:id': 'CategoriesController.uploadCategoryPhoto'
 };

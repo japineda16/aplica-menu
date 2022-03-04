@@ -52,7 +52,7 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
     adapter: 'sails-mongo',
-    url: 'mongodb://root:4978430@127.0.0.1:27017/DigitalMenu'
+    url: 'mongodb://pineda:4978430xd@127.0.0.1:27017/DigitalMenu'
 
   },
 

@@ -47,8 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: 'sails-mongo',
+      url: 'mongodb://root:4978430xd@172.18.0.2:27017/DigitalMenu'
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -148,9 +148,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+        'https://tusferias.com',
+      ]
     },
 
   },
@@ -340,7 +340,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-  // port: 80,
+  port: 80,
 
 
 
@@ -374,8 +374,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
-    internalEmailAddress: 'support@example.com',
+    baseUrl: 'https://api.tusferias.com',
+    internalEmailAddress: 'support@tusferias.com',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',
