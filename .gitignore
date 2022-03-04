@@ -126,7 +126,6 @@ nbproject
 dump.rdb
 
 assets/uploads/*
-assets/uploads/*
 
 npm-debug.log
 lib-cov
