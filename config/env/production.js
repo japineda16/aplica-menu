@@ -48,7 +48,7 @@ module.exports = {
     ***************************************************************************/
     default: {
       adapter: 'sails-mongo',
-      url: 'mongodb://root:4978430xd@172.18.0.2:27017/DigitalMenu'
+      url: 'mongodb://root:4978430xd@127.0.0.1:27017/DigitalMenu'
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
