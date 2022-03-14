@@ -150,6 +150,7 @@ module.exports = {
     cors: {
       allowOrigins: [
         'https://tusferias.com',
+        'https://katalogo.vip'
       ]
     },
 

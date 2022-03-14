@@ -12,27 +12,31 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 
     name: {
-      type: "string",
+      type: 'string',
       required: true,
     },
     description: {
-      type: "string",
+      type: 'string',
       required: true,
     },
     price: {
-      type: "number",
+      type: 'number',
       required: true,
     },
     currency: {
-      type: "string",
+      type: 'string',
       required: true,
     },
     image: {
-      type: "string",
+      type: 'string',
     },
     featured: {
-      type: "boolean",
+      type: 'boolean',
       defaultsTo: false,
+    },
+    isActive: {
+      type: 'boolean',
+      defaultsTo: true
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

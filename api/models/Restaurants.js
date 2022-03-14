@@ -35,6 +35,11 @@ module.exports = {
       required: false
     },
 
+    isActive: {
+      type: 'boolean',
+      defaultsTo: true
+    },
+
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝

@@ -47,7 +47,7 @@ module.exports = {
     try {
       rest = await Restaurants.findOne({where: {restaurantTag: req.param('tag')}}).populate('users')
       .populate('fair')
-      .populate('menu').populate('category').exec( (err, fido) => {
+      .populate('menu', {isActive: true}).populate('category').exec( (err, fido) => {
         if (err) {return res.serverError(err);}
         if (!fido) {return res.notFound();}
         return res.ok(fido);
