@@ -45,7 +45,10 @@ module.exports = {
 
   getRestaurant: async (req, res) => {
     try {
-      rest = await Restaurants.findOne({where: {restaurantTag: req.param('tag')}}).populate('users')
+      rest = await Restaurants.find({
+        where: {restaurantTag: req.param('tag')},
+        limit: 1
+      }).populate('users')
       .populate('fair')
       .populate('menu', {isActive: true}).populate('category').exec( (err, fido) => {
         if (err) {return res.serverError(err);}

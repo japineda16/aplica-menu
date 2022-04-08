@@ -54,7 +54,7 @@ module.exports.routes = {
   'POST /restaurant/logo/:id': 'RestaurantsController.uploadRestaurantLogo',
   //Upload restaurant logo
   'POST /menu/logo/:id': 'MenuController.uploadMenuPhoto',
-  'GET /resturantTag/:tag': 'RestaurantsController.getRestaurant',
+  'POST /resturantTag/:tag': 'RestaurantsController.getRestaurant',
 
   /**********************
    *         Fair        *
