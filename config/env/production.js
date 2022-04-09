@@ -151,7 +151,9 @@ module.exports = {
       allowOrigins: [
         'https://tusferias.com',
         'https://katalogo.vip'
-      ]
+      ],
+      allowCredentials: false,
+      allowRequestHeaders:'content-type, authorization'
     },
 
   },
