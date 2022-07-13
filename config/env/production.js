@@ -148,10 +148,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      allowOrigins: [
-        'https://tusferias.com',
-        'https://katalogo.vip'
-      ],
+      allowOrigins: '*',
       allowCredentials: false,
       allowRequestHeaders:'content-type, authorization'
     },
