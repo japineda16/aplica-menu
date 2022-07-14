@@ -15,7 +15,7 @@ module.exports = {
   signUp: async function (req, res) {
     try {
       const schema = joi.object().keys({
-        email: joi.string().required().email(),
+        email: joi.string().required().email().lowercase(),
         password: joi.string().required(),
         role: joi.string().required(),
         name: joi.string().required()
@@ -51,7 +51,7 @@ module.exports = {
   login: async function (req, res) {
     try {
       let schema = joi.object().keys({
-        email: joi.string().required().email(),
+        email: joi.string().required().email().lowercase(),
         password: joi.string().required()
       });
       const query = await schema.validate(req.allParams());
